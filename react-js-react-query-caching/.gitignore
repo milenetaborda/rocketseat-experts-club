@@ -1,0 +1,54 @@
+dist
+dist-ssr
+*.local
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+config-overrides.js
+build/
+
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# testing
+coverage
+cypress/videos
+cypress/screenshots
+.nyc_output
+cypress-coverage
+jest-coverage
+results
+reports
+
+# production
+build
+out
+dir
+
+# misc
+.DS_Store
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+.idea/
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# next.js
+/.next/
+/out/
+
+# vercel
+.vercel
+
+#provi-components
+.yalc
+yalc.lock
+.package-lock.json
+.npmrc

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./App.css";
 import { ProductDetail, ProductList } from "./components/Products";
+import "./App.css";
 
 function App() {
   const [productId, setProductId] = useState<number | null>(null);

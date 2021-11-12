@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Axios from "axios";
 import { IProduct } from "../../types";
+import { useQuery } from "react-query";
 
 const fetchProduct = (id: number) => {
   return Axios.get(`http://localhost:3333/products/${id}`).then(
@@ -14,18 +15,10 @@ type IProductDetail = {
 };
 
 const ProductDetail = ({ id, onBackToList }: IProductDetail) => {
-  const [product, setProduct] = useState<IProduct>();
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-
-  useEffect(() => {
-    setIsLoading(true);
-
-    fetchProduct(id)
-      .then((data) => setProduct(data))
-      .finally(() => {
-        setIsLoading(false);
-      });
-  }, []);
+  const { data: product, isLoading } = useQuery<IProduct>(
+    [`products/${id}`],
+    () => fetchProduct(id)
+  );
 
   if (isLoading || !product) {
     return <h1>Loading product ...</h1>;

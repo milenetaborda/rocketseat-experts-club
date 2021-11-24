@@ -6,8 +6,6 @@ Com a tecnologia evoluindo, somos chamados a cada vez mais desenvolver aplicaç�
 
 Neste vídeo, vamos usar a biblioteca React query para cachear nossas requisições e tornar nosso app muito mais otimizado.
 
-## Expert
+## Licença
 
-| [<img src="https://avatars.githubusercontent.com/u/29175815?s=400&u=0fee7695511e1dfabdf5eaacd405853d4e69745c&v=4" width="75px;"/>](https://github.com/joaovbibiano) |
-| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                           [João Bibiano](https://github.com/joaovbibiano)                                                           |
+Projetado com ♥ por [milenetaborda](https://github.com/milenetaborda). Licenciado sob a [Licença MIT](licença).
